@@ -78,7 +78,7 @@ function Search() {
               title={c.name.split('-')[0]}
             />
           ))}
-          {content.length === 0 ? <h2>No Pokemon Found</h2> : " "}
+          {content.length === 0 ? <h2 style={{color: "white"}}>No Pokemon Found</h2> : " "}
         </div>
           { content.length !== 0 &&
             (<CustomPagination setPage={setPage} />

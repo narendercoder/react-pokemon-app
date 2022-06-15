@@ -4,7 +4,6 @@
     padding: 0;
     scroll-behavior: smooth;
     font-family: 'Comfortaa', cursive;
-    color: white;
   }
   
   html{
@@ -18,6 +17,7 @@
     min-height: 100vh;
     background-color: transparent;
     /* color: white ; */
+    padding-top: 10px;
     padding-bottom: 70px;
   }
   

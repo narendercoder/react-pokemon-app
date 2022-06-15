@@ -19,10 +19,10 @@ const useStyles = makeStyles({
     color:'white',
     '&:hover':{
      color: "gold"
-  },
+    },
   '&.Mui-selected': {
     color: 'gold',
-  }
+    }
   }
   
 });
@@ -52,7 +52,6 @@ export default function SimpleBottomNavigation() {
           label="Home"
           icon={<WhatshotIcon />}
         />
-      
         <BottomNavigationAction
         className={classes.label}
           label="Search"
