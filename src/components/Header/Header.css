@@ -1,0 +1,9 @@
+.logo{
+    position: relative;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+}
+img{
+    width: 300px;
+}

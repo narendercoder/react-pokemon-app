@@ -1,0 +1,247 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 300px;
+    padding: 5px;
+    /* background-color: rgb(52, 59, 79); */
+    background-color: #10141f;;
+    border-radius: 10px ;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.pokemon_card{
+    position: relative;
+    background: linear-gradient(#92BC2C,#B763CF);
+    padding: 5px;
+    margin: 10px 10px 50px 10px;
+    border-radius: 10px;
+}
+
+.pokemon_card:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 30px #B763CF;
+}
+.pokemon_card .info_icon{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    z-index: 1;
+    /* border: 1px solid red; */
+}
+.info_icon:hover{
+    transform: scale(1.1);
+    color:#5FBD58;
+}
+
+.pokemon_card .favorite{
+    color:crimson;
+}
+.poke_number{
+    position: relative;
+    text-align: center;
+    font-size: 2rem;
+    padding: 9px;
+    color: rgb(255, 255, 255);
+}
+.card .poke_name{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    padding: 8px 0;
+    z-index: 2;
+    color: white;
+    text-transform: capitalize;
+}
+.card .title{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    padding: 8px 0;
+    z-index: 2;
+    color: white;
+    font-weight: 100;
+}
+
+.card img{
+    position: relative;
+    width: 100%;
+    height: 50%;
+    color: white;
+    background-color: transparent;
+}
+.card .poke_type{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    height: 50px;
+    justify-content: space-around;
+}
+
+.card .poke_type .poke_type_icon .circle{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: 200ms all;
+    overflow: hidden;
+}
+
+.card .poke_type .poke_type_icon .icon{
+    width: 60%;
+}
+.card .poke_type_icon .circle:hover{
+    filter: saturate(200%);
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.tooltip{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(103, 103, 103);
+    font-size: 0.95rem;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 40%;
+    padding: 5px;
+    bottom: -35px;
+    border-radius: 3px;
+    z-index: 10;
+    opacity: 0;
+    pointer-events: none;
+    color: white;
+    transition: all 0.4s;
+}
+.tooltip::before{
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 20px;
+    background: rgb(103, 103, 103);
+    top: -5px;
+    transform:rotate(45deg);
+    z-index: -1;
+    
+}
+.tooltip:hover{
+    transform: scale(0);
+}
+.poke_type .poke_type_icon:hover .tooltip{
+    opacity: 1;
+    pointer-events: auto;
+}
+.bug {
+    background: #92BC2C;
+    box-shadow: 0 0 15px #92BC2C;
+}
+
+.dark {
+    background: #595761;
+    box-shadow: 0 0 15px #595761;
+}
+
+.dragon {
+    background: #0C69C8;
+    box-shadow: 0 0 15px #0C69C8;
+}
+
+.electric {
+    background: #F2D94E;
+    box-shadow: 0 0 15px #F2D94E;
+}
+
+.fire {
+    background: #FBA54C;
+    box-shadow: 0 0 15px #FBA54C;
+}
+
+.fairy {
+    background: #EE90E6;
+    box-shadow: 0 0 15px #EE90E6;
+}
+
+.fighting {
+    background: #D3425F;
+    box-shadow: 0 0 15px #D3425F;
+}
+
+.flying {
+    background: #A1BBEC;
+    box-shadow: 0 0 15px #A1BBEC;
+}
+
+.ghost {
+    background: #5F6DBC;
+    box-shadow: 0 0 15px #5F6DBC;
+}
+
+.grass {
+    background: #5FBD58;
+    box-shadow: 0 0 15px #5FBD58;
+}
+
+.ground {
+    background: #DA7C4D;
+    box-shadow: 0 0 15px #DA7C4D;
+}
+
+.ice {
+    background: #75D0C1;
+    box-shadow: 0 0 15px #75D0C1;
+}
+
+.normal {
+    background: #A0A29F;
+    box-shadow: 0 0 15px #A0A29F;
+}
+
+.poison {
+    background: #B763CF;
+    box-shadow: 0 0 15px #B763CF;
+}
+
+.psychic {
+    background: #FA8581;
+    box-shadow: 0 0 15px #FA8581;
+}
+
+.rock {
+    background: #C9BB8A;
+    box-shadow: 0 0 15px #C9BB8A;
+}
+
+.steel {
+    background: #5695A3;
+    box-shadow: 0 0 15px #5695A3;
+}
+
+.water {
+    background: #539DDF;
+    box-shadow: 0 0 15px #539DDF;
+}
+
+
+@media (max-width: 550px){
+    .card{
+        width: 120px;
+        height: 220px;
+    }
+    .card .poke_type .poke_type_icon .circle{
+        width: 30px;
+        height: 30px;
+        
+    }
+    .card .poke_name{
+        font-size: 0.6rem;
+    }
+}
